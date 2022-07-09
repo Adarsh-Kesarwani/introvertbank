@@ -57,9 +57,9 @@ body{
 }
 .customers button{ 
     padding: 10px;
-    font-size: larger;
-    background-color: green;
-    color: white;
+    font-size: 30px;
+    border: none;
+    background-color: blanchedalmond;
 }
 
 .customers button:hover{
