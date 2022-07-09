@@ -1,139 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Introvert Bank</title>
-    <link rel="stylesheet" href="css/customers.css" />
-  </head>
-  <body>
-    <header> <div class="nav">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introvert Bank</title>
+  <link rel="stylesheet" href="css/customers.css" />
+</head>
+
+<body>
+  <header>
+    <div class="nav">
       <div className="brand">
-          <h2>Introvert Bank</h2> 
+        <h2>Introvert Bank</h2>
       </div>
-      <div className="menuItems"> 
+      <div className="menuItems">
         <a href="/about">About US</a>
         <a href="/about">Contact</a>
         <a target="_blank" href="https://internship.thesparksfoundation.info/">Help</a>
         <a target="_blank" href="https://internship.thesparksfoundation.info/">About Internship</a>
-     </div>
-   </div></header>
-    <div class="container">
-      <div class="myAccount">
-        <div class="personel">
-          <h2>Name: Adarsh Kesarwani</h2>
-          <h2>Account No: 90901900922</h2>
-          <h2>Contact: 8696091011</h2>
-          <h2>Address: Noida</h2>
-        </div>
-        <div class="bank">
-          <h2>Account Type: Current</h2>
-          <div class="myBal">
-            <h2>Balance:</h2>
-            <h2><p id="adarshBankBalance">50000</p></h2>  
-          </div>
-          
-          <h2>IFSC: INTR00090</h2>
-          <h2>Bank:Introvert Bank</h2>
-        </div>
       </div>
-      <div class="ourCustomes"></div>
     </div>
-    <div class="transfer">
-      <a href="/"><button>Return Home</button></a>
-      <a href="/customers"><button>Cancel Transaction</button></a>
-    </div>
+  </header>
+  <div class="container">
+    <div class="myAccount">
+      <div class="personel">
+        <h2>Name: Adarsh Kesarwani</h2>
+        <h2>Account No: 90901900922</h2>
+        <h2>Contact: 8696091011</h2>
+        <h2>Address: Noida</h2>
+      </div>
+      <div class="bank">
+        <h2>Account Type: Current</h2>
+        <div class="myBal">
+          <h2>Balance:</h2>
+          <h2>
+            <p id="adarshBankBalance">50000</p>
+          </h2>
+        </div>
 
-    <div class="head">
-      <h1 id="head">Make Transaction</h1>
+        <h2>IFSC: INTR00090</h2>
+        <h2>Bank:Introvert Bank</h2>
       </div>
-      <div class="container">
-      <div class="makeTranscation">
-      <text>Enter Account number </text> 
+    </div>
+    <div class="ourCustomes"></div>
+  </div>
+  <div class="transfer">
+    <a href="/"><button>Return Home</button></a>
+    <a ><button onclick="showTransaction()">Cancel Transaction</button></a>
+  </div>
+
+  <div class="head">
+    <h1 id="head">Make Transaction</h1>
+  </div>
+  <div class="container">
+    <div class="makeTranscation">
+      <text>Enter Account number </text>
       <input id="enterAccNum" type="number"></input><br>
       <text>Enter the Amount</text>
-      <input id="enterAmount" type="number" ></input>
+      <input id="enterAmount" type="number"></input>
       <button onClick=calculate()>Confirm</button></br>
-      </div>
-      </div>
-
-    <div class="table">
-      <table>
-        <tr>
-          <th>Serial No.</th>
-          <th>Name</th>
-          <th>Account No</th>
-          <th>balance</th>
-        </tr>
-        <tr>
-          <td>1.</td>
-          <td>Aman</td>
-          <td>101</td>
-          <td><p id="101"> 50000</p></td>
-        </tr>
-        <tr>
-          <td>2.</td>
-          <td>Aryan</td>
-          <td>102</td>
-          <td><p id="102"> 50000</p></td>
-        </tr>
-        <tr>
-          <td>3.</td>
-          <td>Aahu</td>
-          <td>103</td>
-          <td><p id="103"> 50000</p></td>
-        </tr>
-        <tr>
-          <td>4.</td>
-          <td>Ravi</td>
-          <td>104</td>
-          <td><p id="104"> 50000</p></td>
-        </tr>
-        <tr>
-          <td>5.</td>
-          <td>Shikhar</td>
-          <td>105</td>
-          <td><p id="105"> 50000</p></td>
-        </tr>
-        <tr>
-          <td>6.</td>
-          <td>Ayush</td>
-          <td>106</td>
-          <td><p id="106"> 50000</p></td>
-        </tr>
-        <tr>
-          <td>7.</td>
-          <td>Arju</td>
-          <td>107</td>
-          <td><p id="107"> 50000</p></td>
-        </tr>
-        <tr>
-          <td>8.</td>
-          <td>Prince</td>
-          <td>108</td>
-          <td><p id="108"> 50000</p></td>
-        </tr>
-        <tr>
-          <td>9.</td>
-          <td>Aditya</td>
-          <td>109</td>
-          <td><p id="109"> 50000</p></td>
-        </tr>
-        <tr>
-          <td>10.</td>
-          <td>Harsh</td>
-          <td>110</td>
-          <td><p id="110"> 50000</p></td>
-        </tr>
-        <tr>
-          <td>11.</td>
-          <td>Ritik</td>
-          <td>111</td>
-          <td><p id="111"> 50000</p></td>
-        </tr>
-      </table>
     </div>
-  </body>
-  <script src="javascript/customers.js"></script>
+  </div>
+  <h1 style="text-align:center;" >Customres</h1>
+  <div class="table">
+    <table>
+      <tr>
+        <th>Account No</th>
+        <th>Name</th>
+        <th>E-mail</th>
+        <th>balance</th>
+      </tr>
+      <tr>
+        <td>101</td>
+        <td>Aman</td>
+        <td>aman@gmail.com</td>
+        <td>
+          <p id="101"> 50000</p>
+        </td>
+      </tr>
+      <tr>
+        <td>102</td>
+        <td>Aryan</td>
+        <td>aryan@gmail.com</td>
+        <td>
+          <p id="102"> 50000</p>
+        </td>
+      </tr>
+      <tr>
+        <td>103</td>
+        <td>Aahu</td>
+        <td>ashu@gmail.com</td>
+        <td>
+          <p id="103"> 50000</p>
+        </td>
+      </tr>
+      <tr>
+        <td>104</td>
+        <td>Ravi</td>
+        <td>ravi@gmail.com</td>
+        <td>
+          <p id="104"> 50000</p>
+        </td>
+      </tr>
+      <tr>
+        <td>105</td>
+        <td>Shikhar</td>
+        <td>shikhar@gmail.com</td>
+        <td>
+          <p id="105"> 50000</p>
+        </td>
+      </tr>
+      <tr>
+        <td>106</td>
+        <td>Ayush</td>
+        <td>ayush@gmail.com</td>
+        <td>
+          <p id="106"> 50000</p>
+        </td>
+      </tr>
+      <tr>
+        <td>107</td>
+        <td>Arju</td>
+        <td>arju@gmail.com</td>
+        <td>
+          <p id="107"> 50000</p>
+        </td>
+      </tr>
+      <tr>
+        <td>108</td>
+        <td>Prince</td>
+        <td>prince@gmail.com</td>
+        <td>
+          <p id="108"> 50000</p>
+        </td>
+      </tr>
+      <tr>
+        <td>109</td>
+        <td>Aditya</td>
+        <td>aditya@gmail.com</td>
+        <td>
+          <p id="109"> 50000</p>
+        </td>
+      </tr>
+      <tr>
+        <td>110</td>
+        <td>Harsh</td>
+        <td>harsh@gmail.com</td>
+        <td>
+          <p id="110"> 50000</p>
+        </td>
+      </tr>
+      <tr>
+        <td>111</td>
+        <td>Ritik</td>
+        <td>ritik@gmail.com</td>
+        <td>
+          <p id="111"> 50000</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+<script src="javascript/customers.js"></script>
+
 </html>

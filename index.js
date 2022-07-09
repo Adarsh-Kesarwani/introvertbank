@@ -1,5 +1,4 @@
 const ex = require("express");
-const db=require("./src/db");
 const PORT = process.env.PORT || 2020;
 const app = ex();
 
