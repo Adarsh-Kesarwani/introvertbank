@@ -1,7 +1,7 @@
 let clearAccNumber = () => {
   document.getElementById("enterAccNum").value = parseInt(1);
 };
-let showTransaction=()=>{alert("Transaction happened ")}
+let showTransaction=()=>{alert("All the transaction are canceled ")}
 
 let calculate = () => {
   let adarshBankBalance = parseInt(document.getElementById("adarshBankBalance").innerText);
