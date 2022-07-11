@@ -38,7 +38,7 @@ body{
 }
 /* Image and quote design */
 .container{
-    height: 70vh;
+    /* height: 70vh; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -220,6 +220,7 @@ body{
 .contactUs{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     width:100%;
     background-color: rgb(117, 205, 232);
     border-radius: 50px;
