@@ -2,7 +2,6 @@ const ex = require("express");
 const PORT = process.env.PORT || 2020;
 const app = ex();
 
-
 app.use(ex.static("./public"));
 
 app.get("/",(req, res) => {
